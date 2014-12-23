@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graf: Dokumentacja klasy graf</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graf
+   </div>
+   <div id="projectbrief">Zadanie grafowe na AISDI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classgraf.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="classgraf-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy graf</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>klasa przechowująca strukturę grafu i wykonująca na nim operacje  
+ <a href="classgraf.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="graf_8h_source.html">graf.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1krawedz.html">krawedz</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">klasa wewnętrzna reprezentująca krawędź grafu  <a href="classgraf_1_1krawedz.html#details">Więcej...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1wierzcholek.html">wierzcholek</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">klasa wewnętrzna reprezentująca wierzchołek grafu  <a href="classgraf_1_1wierzcholek.html#details">Więcej...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a6dc94b859678110f1bc85095a55bbee4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf.html#a6dc94b859678110f1bc85095a55bbee4">graf</a> ()</td></tr>
+<tr class="memdesc:a6dc94b859678110f1bc85095a55bbee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">konstruktor grafu  <a href="#a6dc94b859678110f1bc85095a55bbee4">Więcej...</a><br/></td></tr>
+<tr class="separator:a6dc94b859678110f1bc85095a55bbee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aefd40799975c316a17bd67021e05f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf.html#a9aefd40799975c316a17bd67021e05f2">~graf</a> ()</td></tr>
+<tr class="memdesc:a9aefd40799975c316a17bd67021e05f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">destruktor grafu  <a href="#a9aefd40799975c316a17bd67021e05f2">Więcej...</a><br/></td></tr>
+<tr class="separator:a9aefd40799975c316a17bd67021e05f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa932c4c56cc67615d081e912c96cf04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf.html#afa932c4c56cc67615d081e912c96cf04">insert_wierzcholek</a> (double X, double Y)</td></tr>
+<tr class="memdesc:afa932c4c56cc67615d081e912c96cf04"><td class="mdescLeft">&#160;</td><td class="mdescRight">wstawienie nowego wierzchołka do grafu  <a href="#afa932c4c56cc67615d081e912c96cf04">Więcej...</a><br/></td></tr>
+<tr class="separator:afa932c4c56cc67615d081e912c96cf04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3cad188e3ec82ab34f5c35d83e07819"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf.html#af3cad188e3ec82ab34f5c35d83e07819">insert_krawedz</a> (unsigned int a, unsigned int b, double Waga)</td></tr>
+<tr class="separator:af3cad188e3ec82ab34f5c35d83e07819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:aa060a0259a047e7b09249a8384c0391c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair<br class="typebreak"/>
+&lt; <a class="el" href="classgraf_1_1wierzcholek.html">wierzcholek</a> *, std::vector<br class="typebreak"/>
+&lt; <a class="el" href="classgraf_1_1krawedz.html">krawedz</a> * &gt; * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf.html#aa060a0259a047e7b09249a8384c0391c">tab</a></td></tr>
+<tr class="separator:aa060a0259a047e7b09249a8384c0391c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>klasa przechowująca strukturę grafu i wykonująca na nim operacje </p>
+
+<p>Definicja w linii <a class="el" href="graf_8h_source.html#l00021">21</a> pliku <a class="el" href="graf_8h_source.html">graf.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="a6dc94b859678110f1bc85095a55bbee4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">graf::graf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>konstruktor grafu </p>
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00010">10</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9aefd40799975c316a17bd67021e05f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">graf::~graf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>destruktor grafu </p>
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00017">17</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="af3cad188e3ec82ab34f5c35d83e07819"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graf::insert_krawedz </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Waga</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa932c4c56cc67615d081e912c96cf04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graf::insert_wierzcholek </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>wstawienie nowego wierzchołka do grafu </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X</td><td>współrzędna x wierzchołka </td></tr>
+    <tr><td class="paramname">Y</td><td>współrzędna y wierzchołka </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00027">27</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="graf_8h_source.html#l00061">tab</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="aa060a0259a047e7b09249a8384c0391c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::pair&lt;<a class="el" href="classgraf_1_1wierzcholek.html">wierzcholek</a>*, std::vector&lt;<a class="el" href="classgraf_1_1krawedz.html">krawedz</a>*&gt;* &gt; &gt; graf::tab</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>lista sąsiedztwa </p>
+
+<p>Definicja w linii <a class="el" href="graf_8h_source.html#l00061">61</a> pliku <a class="el" href="graf_8h_source.html">graf.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="graf_8cpp_source.html#l00027">insert_wierzcholek()</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="graf_8h_source.html">graf.h</a></li>
+<li><a class="el" href="graf_8cpp_source.html">graf.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classgraf.html">graf</a></li>
+    <li class="footer">Wygenerowano Wt, 23 gru 2014 13:52:58 dla graf programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>
