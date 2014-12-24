@@ -31,7 +31,6 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">graf
    </div>
-   <div id="projectbrief">Zadanie grafowe na AISDI</div>
   </td>
  </tr>
  </tbody>
@@ -102,13 +101,16 @@ $(document).ready(function(){initNavTree('_realizacja.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="Algorytm"></a>
 Algorytm</h1>
-<p>Do znalezienia silnie spójnych składowych użyję algorytmu Roberta Tarjana </p>
+<p>Do znalezienia silnie spójnych składowych używam algorytmu Roberta Tarjana. </p>
+<h1><a class="anchor" id="Wejście"></a>
+Obsługa wejścia</h1>
+<p>Ze standardowego strumienia wczytuję po lini, aż do EOF lub innego znaku końca strumienia. while(getline(cin,s)) Żeby odróżnić wierzchołki od krawędzi zliczam spacje, 1 -&gt; wierzchołek, 2 -&gt; krawędź. Liczby uzyskuję funkcjami z c++11 stod i stoi, a do wyboru fragmentu stringa substr. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Wygenerowano Wt, 23 gru 2014 13:52:58 dla graf programem
+    <li class="footer">Wygenerowano Śr, 24 gru 2014 16:45:29 dla graf programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

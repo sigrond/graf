@@ -124,17 +124,10 @@ $(document).ready(function(){initNavTree('graf_8cpp_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classgraf.html#aa060a0259a047e7b09249a8384c0391c">tab</a>.push_back(std::make_pair(<span class="keyword">new</span> <a class="code" href="classgraf_1_1wierzcholek.html">wierzcholek</a>(X,Y), <span class="keyword">new</span> std::vector&lt;krawedz*&gt;));</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classgraf.html#af3cad188e3ec82ab34f5c35d83e07819">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classgraf.html#af3cad188e3ec82ab34f5c35d83e07819">graf::insert_krawedz</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> a, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> b, <span class="keywordtype">double</span> Waga)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classgraf.html#aa060a0259a047e7b09249a8384c0391c">tab</a>.at(a).second-&gt;push_back(<span class="keyword">new</span> <a class="code" href="classgraf_1_1krawedz.html">krawedz</a>(Waga,<a class="code" href="classgraf.html#aa060a0259a047e7b09249a8384c0391c">tab</a>.at(b).first));</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
@@ -154,19 +147,31 @@ $(document).ready(function(){initNavTree('graf_8cpp_source.html','');});
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="ttc" id="classgraf_1_1krawedz_html"><div class="ttname"><a href="classgraf_1_1krawedz.html">graf::krawedz</a></div><div class="ttdoc">klasa wewnętrzna reprezentująca krawędź grafu </div><div class="ttdef"><b>Definition:</b> <a href="graf_8h_source.html#l00046">graf.h:46</a></div></div>
 <div class="ttc" id="classgraf_html_a9aefd40799975c316a17bd67021e05f2"><div class="ttname"><a href="classgraf.html#a9aefd40799975c316a17bd67021e05f2">graf::~graf</a></div><div class="ttdeci">~graf()</div><div class="ttdoc">destruktor grafu </div><div class="ttdef"><b>Definition:</b> <a href="graf_8cpp_source.html#l00017">graf.cpp:17</a></div></div>
 <div class="ttc" id="graf_8h_html"><div class="ttname"><a href="graf_8h.html">graf.h</a></div><div class="ttdoc">Plik nagłówkowy klasy graf. </div></div>
 <div class="ttc" id="classgraf_html_aa060a0259a047e7b09249a8384c0391c"><div class="ttname"><a href="classgraf.html#aa060a0259a047e7b09249a8384c0391c">graf::tab</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; wierzcholek *, std::vector&lt; krawedz * &gt; * &gt; &gt; tab</div><div class="ttdef"><b>Definition:</b> <a href="graf_8h_source.html#l00061">graf.h:61</a></div></div>
 <div class="ttc" id="classgraf_html_afa932c4c56cc67615d081e912c96cf04"><div class="ttname"><a href="classgraf.html#afa932c4c56cc67615d081e912c96cf04">graf::insert_wierzcholek</a></div><div class="ttdeci">void insert_wierzcholek(double X, double Y)</div><div class="ttdoc">wstawienie nowego wierzchołka do grafu </div><div class="ttdef"><b>Definition:</b> <a href="graf_8cpp_source.html#l00027">graf.cpp:27</a></div></div>
 <div class="ttc" id="classgraf_1_1wierzcholek_html"><div class="ttname"><a href="classgraf_1_1wierzcholek.html">graf::wierzcholek</a></div><div class="ttdoc">klasa wewnętrzna reprezentująca wierzchołek grafu </div><div class="ttdef"><b>Definition:</b> <a href="graf_8h_source.html#l00027">graf.h:27</a></div></div>
 <div class="ttc" id="classgraf_html_a6dc94b859678110f1bc85095a55bbee4"><div class="ttname"><a href="classgraf.html#a6dc94b859678110f1bc85095a55bbee4">graf::graf</a></div><div class="ttdeci">graf()</div><div class="ttdoc">konstruktor grafu </div><div class="ttdef"><b>Definition:</b> <a href="graf_8cpp_source.html#l00010">graf.cpp:10</a></div></div>
+<div class="ttc" id="classgraf_html_af3cad188e3ec82ab34f5c35d83e07819"><div class="ttname"><a href="classgraf.html#af3cad188e3ec82ab34f5c35d83e07819">graf::insert_krawedz</a></div><div class="ttdeci">void insert_krawedz(unsigned int a, unsigned int b, double Waga)</div><div class="ttdoc">wstawienie krawędzi do grafu </div><div class="ttdef"><b>Definition:</b> <a href="graf_8cpp_source.html#l00039">graf.cpp:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="graf_8cpp.html">graf.cpp</a></li>
-    <li class="footer">Wygenerowano Wt, 23 gru 2014 13:52:58 dla graf programem
+    <li class="footer">Wygenerowano Wt, 23 gru 2014 14:26:49 dla graf programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

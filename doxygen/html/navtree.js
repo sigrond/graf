@@ -3,14 +3,16 @@ var NAVTREE =
   [ "graf", "index.html", [
     [ "Zadanie grafowe na AISDI", "index.html", [
       [ "2014Z zadanie GRAF", "index.html#AISDI", [
-        [ "Dodatkowe założenia:", "index.html#Dodatkowe", null ],
-        [ "Wejście", "index.html#Wejście", null ],
+        [ "Dodatkowe założenia:", "index.html#Dodatkowe", null ]
+      ] ],
+      [ "Obsługa wejścia", "index.html#Wejście", [
         [ "Wyjście standardowe", "index.html#Wyjście", null ],
         [ "Przykład działania:", "index.html#Przykład", null ]
       ] ]
     ] ],
     [ "Realizacja zadania", "_realizacja.html", [
-      [ "Algorytm", "_realizacja.html#Algorytm", null ]
+      [ "Algorytm", "_realizacja.html#Algorytm", null ],
+      [ "Obsługa wejścia", "_realizacja.html#Wejście", null ]
     ] ],
     [ "Klasy", null, [
       [ "Lista klas", "annotated.html", "annotated" ],
@@ -25,7 +27,6 @@ var NAVTREE =
       [ "Lista plików", "files.html", "files" ],
       [ "Składowe plików", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Funkcje", "globals_func.html", null ],
         [ "Definicje", "globals_defs.html", null ]
       ] ]
     ] ]

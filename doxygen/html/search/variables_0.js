@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kierunek',['kierunek',['../classgraf_1_1krawedz.html#aca4644d49f36b23d4acff03eb1ebb185',1,'graf::krawedz']]]
+  ['e',['E',['../classgraf.html#a83696cbb986895c5274e11fa744348ac',1,'graf']]]
 ];

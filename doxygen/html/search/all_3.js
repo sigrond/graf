@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['kierunek',['kierunek',['../classgraf_1_1krawedz.html#aca4644d49f36b23d4acff03eb1ebb185',1,'graf::krawedz']]],
-  ['krawedz',['krawedz',['../classgraf_1_1krawedz.html#aa96f284cb6ab96b5d5a6e1d80bffb5f5',1,'graf::krawedz']]],
-  ['krawedz',['krawedz',['../classgraf_1_1krawedz.html',1,'graf']]]
+  ['insert_5fkrawedz',['insert_krawedz',['../classgraf.html#af3cad188e3ec82ab34f5c35d83e07819',1,'graf']]],
+  ['insert_5fwierzcholek',['insert_wierzcholek',['../classgraf.html#afa932c4c56cc67615d081e912c96cf04',1,'graf']]]
 ];

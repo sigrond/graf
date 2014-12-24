@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]]
+  ['krawedz',['krawedz',['../classgraf_1_1krawedz.html#aa96f284cb6ab96b5d5a6e1d80bffb5f5',1,'graf::krawedz']]]
 ];

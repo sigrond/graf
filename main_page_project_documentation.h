@@ -55,5 +55,10 @@ Dane wyjściowe (cout):
 1 2 3
  \page Realizacja Realizacja zadania
  \section Algorytm Algorytm
-Do znalezienia silnie spójnych składowych użyję algorytmu Roberta Tarjana
+Do znalezienia silnie spójnych składowych używam algorytmu Roberta Tarjana.
+ \section Wejście Obsługa wejścia
+Ze standardowego strumienia wczytuję po lini, aż do EOF lub innego znaku końca strumienia.
+while(getline(cin,s))
+Żeby odróżnić wierzchołki od krawędzi zliczam spacje, 1 -> wierzchołek, 2 -> krawędź.
+Liczby uzyskuję funkcjami z c++11 stod i stoi, a do wyboru fragmentu stringa substr.
  */

@@ -31,7 +31,6 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">graf
    </div>
-   <div id="projectbrief">Zadanie grafowe na AISDI</div>
   </td>
  </tr>
  </tbody>
@@ -106,6 +105,7 @@ $(document).ready(function(){initNavTree('classgraf.html','');});
   <div class="summary">
 <a href="#nested-classes">Komponenty</a> &#124;
 <a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
 <a href="#pri-attribs">Atrybuty prywatne</a> &#124;
 <a href="classgraf-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
@@ -139,7 +139,16 @@ Metody publiczne</h2></td></tr>
 <tr class="memdesc:afa932c4c56cc67615d081e912c96cf04"><td class="mdescLeft">&#160;</td><td class="mdescRight">wstawienie nowego wierzchołka do grafu  <a href="#afa932c4c56cc67615d081e912c96cf04">Więcej...</a><br/></td></tr>
 <tr class="separator:afa932c4c56cc67615d081e912c96cf04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3cad188e3ec82ab34f5c35d83e07819"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf.html#af3cad188e3ec82ab34f5c35d83e07819">insert_krawedz</a> (unsigned int a, unsigned int b, double Waga)</td></tr>
+<tr class="memdesc:af3cad188e3ec82ab34f5c35d83e07819"><td class="mdescLeft">&#160;</td><td class="mdescRight">wstawienie krawędzi do grafu  <a href="#af3cad188e3ec82ab34f5c35d83e07819">Więcej...</a><br/></td></tr>
 <tr class="separator:af3cad188e3ec82ab34f5c35d83e07819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a2ff452eb0a543ffc220936cd0a600"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf.html#ac2a2ff452eb0a543ffc220936cd0a600">znajdz_silnie_spojne_skladowe</a> ()</td></tr>
+<tr class="memdesc:ac2a2ff452eb0a543ffc220936cd0a600"><td class="mdescLeft">&#160;</td><td class="mdescRight">znajduje i wpisuje do wektora silnie spójne składowe  <a href="#ac2a2ff452eb0a543ffc220936cd0a600">Więcej...</a><br/></td></tr>
+<tr class="separator:ac2a2ff452eb0a543ffc220936cd0a600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:ac31c9632dc5fd8cbfd47f27d607290fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf.html#ac31c9632dc5fd8cbfd47f27d607290fa">DFSscc</a> (unsigned int v)</td></tr>
+<tr class="separator:ac31c9632dc5fd8cbfd47f27d607290fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atrybuty prywatne</h2></td></tr>
@@ -147,11 +156,13 @@ Atrybuty prywatne</h2></td></tr>
 &lt; <a class="el" href="classgraf_1_1wierzcholek.html">wierzcholek</a> *, std::vector<br class="typebreak"/>
 &lt; <a class="el" href="classgraf_1_1krawedz.html">krawedz</a> * &gt; * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf.html#aa060a0259a047e7b09249a8384c0391c">tab</a></td></tr>
 <tr class="separator:aa060a0259a047e7b09249a8384c0391c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae108d2788dbe00a1e7e78a9276a5ace5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf.html#ae108d2788dbe00a1e7e78a9276a5ace5">V</a></td></tr>
+<tr class="separator:ae108d2788dbe00a1e7e78a9276a5ace5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83696cbb986895c5274e11fa744348ac"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf.html#a83696cbb986895c5274e11fa744348ac">E</a></td></tr>
+<tr class="separator:a83696cbb986895c5274e11fa744348ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><p>klasa przechowująca strukturę grafu i wykonująca na nim operacje </p>
-
-<p>Definicja w linii <a class="el" href="graf_8h_source.html#l00021">21</a> pliku <a class="el" href="graf_8h_source.html">graf.h</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a class="anchor" id="a6dc94b859678110f1bc85095a55bbee4"></a>
 <div class="memitem">
@@ -167,8 +178,6 @@ Atrybuty prywatne</h2></td></tr>
 </div><div class="memdoc">
 
 <p>konstruktor grafu </p>
-
-<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00010">10</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
 
 </div>
 </div>
@@ -187,11 +196,33 @@ Atrybuty prywatne</h2></td></tr>
 
 <p>destruktor grafu </p>
 
-<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00017">17</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="ac31c9632dc5fd8cbfd47f27d607290fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graf::DFSscc </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="af3cad188e3ec82ab34f5c35d83e07819"></a>
 <div class="memitem">
 <div class="memproto">
@@ -221,6 +252,23 @@ Atrybuty prywatne</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>wstawienie krawędzi do grafu </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>krawędź z </td></tr>
+    <tr><td class="paramname">b</td><td>krawędź do </td></tr>
+    <tr><td class="paramname">Waga</td><td>waga krawędzi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::out_of_range</td><td>exception </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -258,13 +306,48 @@ Atrybuty prywatne</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
 
-<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00027">27</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+</div>
+</div>
+<a class="anchor" id="ac2a2ff452eb0a543ffc220936cd0a600"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector&lt; int &gt; &gt; graf::znajdz_silnie_spojne_skladowe </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
-<p>Odwołuje się do <a class="el" href="graf_8h_source.html#l00061">tab</a>.</p>
+<p>znajduje i wpisuje do wektora silnie spójne składowe </p>
+<dl class="section return"><dt>Zwraca</dt><dd>std::vector&lt;std::vector&lt;int&gt;&gt; wektor silnie spójnych składowych, każda to wektor numerów wierzchołków składowych </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="a83696cbb986895c5274e11fa744348ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int graf::E</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>krawędzi </p>
+
+</div>
+</div>
 <a class="anchor" id="aa060a0259a047e7b09249a8384c0391c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -284,15 +367,32 @@ Atrybuty prywatne</h2></td></tr>
 </div><div class="memdoc">
 <p>lista sąsiedztwa </p>
 
-<p>Definicja w linii <a class="el" href="graf_8h_source.html#l00061">61</a> pliku <a class="el" href="graf_8h_source.html">graf.h</a>.</p>
-
-<p>Odwołania w <a class="el" href="graf_8cpp_source.html#l00027">insert_wierzcholek()</a>.</p>
+</div>
+</div>
+<a class="anchor" id="ae108d2788dbe00a1e7e78a9276a5ace5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int graf::V</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>wierchołków </p>
 
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
 <li><a class="el" href="graf_8h_source.html">graf.h</a></li>
-<li><a class="el" href="graf_8cpp_source.html">graf.cpp</a></li>
+<li><a class="el" href="graf_8cpp.html">graf.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -300,7 +400,7 @@ Atrybuty prywatne</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classgraf.html">graf</a></li>
-    <li class="footer">Wygenerowano Wt, 23 gru 2014 13:52:58 dla graf programem
+    <li class="footer">Wygenerowano Śr, 24 gru 2014 16:45:29 dla graf programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

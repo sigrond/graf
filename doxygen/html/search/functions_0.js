@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['graf',['graf',['../classgraf.html#a6dc94b859678110f1bc85095a55bbee4',1,'graf']]]
+  ['dfsscc',['DFSscc',['../classgraf.html#ac31c9632dc5fd8cbfd47f27d607290fa',1,'graf']]]
 ];
