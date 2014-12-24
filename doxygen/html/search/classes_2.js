@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wierzcholek',['wierzcholek',['../classgraf_1_1wierzcholek.html',1,'graf']]]
+  ['krawedz',['krawedz',['../classgraf_1_1krawedz.html',1,'graf']]]
 ];

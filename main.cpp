@@ -47,7 +47,15 @@ int main()
             cout<<"wczytano: "<<count_space<<" spacji w lini, błędne dane!"<<endl;
         }
     }
-
+    vector<vector<int> > wynik=g.znajdz_silnie_spojne_skladowe();
+    for(int i=0;i<wynik.size();i++)
+    {
+        cout<<"skladowa: "<<i<<" rozmiar: "<<wynik[i].size()<<endl;
+        for(int j=0;j<wynik[i].size();j++)
+        {
+            cout<<wynik[i][j]<<endl;
+        }
+    }
     system("pause");
     return 0;
 }

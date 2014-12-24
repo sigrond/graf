@@ -102,7 +102,103 @@ $(document).ready(function(){initNavTree('_realizacja.html','');});
 <div class="textblock"><h1><a class="anchor" id="Algorytm"></a>
 Algorytm</h1>
 <p>Do znalezienia silnie spójnych składowych używam algorytmu Roberta Tarjana. </p>
-<h1><a class="anchor" id="Wejście"></a>
+<h2><a class="anchor" id="Kod"></a>
+Kod</h2>
+<div class="fragment"><div class="line"> Algorytm Tarjana wyszukiwania silnie spójnych składowych w grafie skierowanym</div>
+<div class="line"></div>
+<div class="line">Algorytm przejścia DFSscc(v,cvn,VN,VLow,VS,S,Lscc,<a class="code" href="classgraf.html">graf</a>)</div>
+<div class="line"></div>
+<div class="line">Wszystkie parametry za wyjątkiem v mogą być zrealizowane jako globalne, co zmniejszy zapotrzebowanie na pamięć przy wywoływaniach rekurencyjnych.</div>
+<div class="line">Wejście</div>
+<div class="line"></div>
+<div class="line">v        –      wierzchołek startowy, v  C</div>
+<div class="line">cvn      –      numer bieżącego wierzchołka, cvn  C</div>
+<div class="line">VN       –      tablica numerów wierzchołków, które ustala DFSscc()</div>
+<div class="line">VLow     –      tablica parametrów Low</div>
+<div class="line">VS       –      tablica logiczna, która informuje, czy dany wierzchołek jest na stosie S</div>
+<div class="line">S        –      stos wierzchołków</div>
+<div class="line">Lscc     –      jednokierunkowa lista silnie spójnych składowych. Każda silnie spójna składowa jest jednokierunkową listą wierzchołków, które do niej należą.</div>
+<div class="line"><a class="code" href="classgraf.html">graf</a>     –      <a class="code" href="classgraf.html">graf</a> zadany w dowolny sposób, algorytm tego nie precyzuje</div>
+<div class="line">Wyjście:</div>
+<div class="line"></div>
+<div class="line">Lista silnie spójnych składowych Lscc.</div>
+<div class="line">Elementy pomocnicze:</div>
+<div class="line"></div>
+<div class="line">u        –      wierzchołek, u  C</div>
+<div class="line">sccp,p   –      wskaźniki do elementu listy wierzchołków</div>
+<div class="line">listp    –      wskaźnik do elementu listy list</div>
+<div class="line">Lista kroków:</div>
+<div class="line"></div>
+<div class="line">K01:    cvn ← cvn + 1   ; zwiększamy numer wierzchołka</div>
+<div class="line">K02:    VN[v] ← cvn     ; i zapamiętujemy go w tablicy VN</div>
+<div class="line">K03:    VLow[v] ← cvn   ; oraz wstępnie w tablicy VLow</div>
+<div class="line">K04:    S.push(v)       ; wierzchołek umieszczamy na stosie</div>
+<div class="line">K05:    VS[v] ← true    ; i zapamiętujemy w VS, że jest on na stosie</div>
+<div class="line">K06:    Dla każdego sąsiada u wierzchołka v wykonuj K07...K12   ; przeglądamy kolejnych sąsiadów wierzchołka v</div>
+<div class="line">K07:        Jeśli VN[u] = 0, to idź do K11      ; sprawdzamy, czy wierzchołek był odwiedzony</div>
+<div class="line">K08:        Jeśli VS[u] = false, to następny obieg pętli K06    ; sprawdzamy, czy wierzchołek u jest na stosie</div>
+<div class="line">K09:        VLow[v] ← min(VLow[v], VN[u])       ; jeśli tak, to wyznaczamy najmniejszy numer dostępnego wierzchołka z v</div>
+<div class="line">K10:        Następny obieg pętli K06    ; i kontynuujemy pętlę</div>
+<div class="line">K11:        DFSscc(u,cvn,VN,VLow,VS,S,Lscc,<a class="code" href="classgraf.html">graf</a>)        ; wierzchołek nieodwiedzony: rekurencyjnie wywołujemy dla niego DFSscc()</div>
+<div class="line">K12:        VLow[v] ← min(VLow[v], VLow[u])     ; i wyznaczamy najmniejszy numer dostępnego wierzchołka z v</div>
+<div class="line">K13:    Jeśli VLow[v] ≠ VN[v], to zakończ       ; sprawdzamy, czy znaleźliśmy całą silnie spójną składową</div>
+<div class="line">K14:    sccp ← nil      ; tworzymy pustą listę wierzchołków</div>
+<div class="line">K15:        u ← S.top() ; pobieramy ze stosu wierzchołek silnie spójnej składowej</div>
+<div class="line">K16:        S,pop()     ; pobrany wierzchołek usuwamy ze stosu</div>
+<div class="line">K17:        VS[u] ← false       ; zaznaczamy, że wierzchołka już nie ma na stosie</div>
+<div class="line">K18:        Utwórz nowy element listy wierzchołków      ; wierzchołek dodajemy do listy silnie spójnej składowej</div>
+<div class="line">K19         p ← adres nowego elementu listy wierzchołków</div>
+<div class="line">K20:        (p→v) ← u</div>
+<div class="line">K21:        (p→next) ← sccp</div>
+<div class="line">K22:        sccp ← p</div>
+<div class="line">K23:    Jeśli u ≠ v, to idź do K15      ; pętlę kontynuujemy, aż do dotarcia do korzenia składowej</div>
+<div class="line">K24:    Utwórz nowy element listy list  ; listę wierzchołków sccp dodajemy do listy Lscc</div>
+<div class="line">K25:    listp ← adres nowego elementu listy list</div>
+<div class="line">K26:    (listp→v) ← sccp</div>
+<div class="line">K27     (listp→next) ← Lscc</div>
+<div class="line">K28:    Lscc ← listp</div>
+<div class="line">K29:    Zakończ</div>
+<div class="line"></div>
+<div class="line">Algorytm główny</div>
+<div class="line"></div>
+<div class="line">Wejście</div>
+<div class="line"></div>
+<div class="line">n        –      liczba wierzchołków w grafie, n  C</div>
+<div class="line">graf     –      graf zadany w dowolny sposób, algorytm tego nie precyzuje</div>
+<div class="line">Wyjście:</div>
+<div class="line"></div>
+<div class="line">Wypisuje na wyjście wierzchołki należące do silnie spójnych składowych.</div>
+<div class="line">Elementy pomocnicze:</div>
+<div class="line"></div>
+<div class="line">v        –      numer wierzchołka, v  C</div>
+<div class="line">cvn      –      numer bieżącego wierzchołka, cvn  C</div>
+<div class="line">VN       –      tablica numerów wierzchołków, które ustala DFSscc()</div>
+<div class="line">VLow     –      tablica parametrów Low</div>
+<div class="line">VS       –      tablica logiczna, która informuje, czy dany wierzchołek jest na stosie S</div>
+<div class="line">S        –      stos wierzchołków</div>
+<div class="line">Lscc     –      jednokierunkowa lista silnie spójnych składowych. Każda silnie spójna składowa jest jednokierunkową listą wierzchołków, które do niej należą.</div>
+<div class="line">listp    –      wskaźnik elementu listy składowych</div>
+<div class="line">p        –      wskaźnik listy wierzchołków</div>
+<div class="line">Lista kroków:</div>
+<div class="line"></div>
+<div class="line">K01:    Utwórz pusty stos S</div>
+<div class="line">K02:    Utwórz n elementową tablicę VN i wyzeruj ją</div>
+<div class="line">K03:    Utwórz n elementową tablicę VS i wyzeruj ją</div>
+<div class="line">K04:    Utwórz n elementową tablicę VLow</div>
+<div class="line">K05:    cvn ← 0 ; zerujemy numer wierzchołka</div>
+<div class="line">K06:    Lscc ← nil      ; tworzymy pustą listę silnie spójnych składowych</div>
+<div class="line">K07:    Dla v = 0,1,...,n - 1 wykonuj K08       ; przeglądamy kolejne wierzchołki grafu</div>
+<div class="line">K08:        Jeśli VN[v] = 0, to DFSscc(v,cvn,VN,VLow,VS,S,Lscc,graf)    ; w wierzchołkach nieodwiedzonych uruchamiamy DFS</div>
+<div class="line">K09:    listp ← Lscc    ; przeglądamy listę silnie spójnych składowych</div>
+<div class="line">K10:    Dopóki listp ≠ nil, wykonuj K11...K16</div>
+<div class="line">K11:        p ← (listp→v)       ; przeglądamy listę wierzchołków</div>
+<div class="line">K12:        Dopóki p ≠ nil, wykonuj K13...K14</div>
+<div class="line">K13:            Pisz (p→v)      ; wypisujemy wierzchołki silnie spójnej składowej</div>
+<div class="line">K14:            p ← (p→next)    ; następny wierzchołek</div>
+<div class="line">K15:        Przejdź do następnego wiersza wydruku</div>
+<div class="line">K16:        listp ← (listp→next)        ; następna lista</div>
+<div class="line">K17:    Zakończ</div>
+</div><!-- fragment --> <h1><a class="anchor" id="Wejście"></a>
 Obsługa wejścia</h1>
 <p>Ze standardowego strumienia wczytuję po lini, aż do EOF lub innego znaku końca strumienia. while(getline(cin,s)) Żeby odróżnić wierzchołki od krawędzi zliczam spacje, 1 -&gt; wierzchołek, 2 -&gt; krawędź. Liczby uzyskuję funkcjami z c++11 stod i stoi, a do wyboru fragmentu stringa substr. </p>
 </div></div><!-- contents -->
@@ -110,7 +206,7 @@ Obsługa wejścia</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Wygenerowano Śr, 24 gru 2014 16:45:29 dla graf programem
+    <li class="footer">Wygenerowano Śr, 24 gru 2014 18:02:55 dla graf programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

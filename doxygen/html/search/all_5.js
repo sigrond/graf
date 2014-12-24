@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['main_5fpage_5fproject_5fdocumentation_2eh',['main_page_project_documentation.h',['../main__page__project__documentation_8h.html',1,'']]]
+  ['kierunek',['kierunek',['../classgraf_1_1krawedz.html#aca4644d49f36b23d4acff03eb1ebb185',1,'graf::krawedz']]],
+  ['krawedz',['krawedz',['../classgraf_1_1krawedz.html#aa96f284cb6ab96b5d5a6e1d80bffb5f5',1,'graf::krawedz']]],
+  ['krawedz',['krawedz',['../classgraf_1_1krawedz.html',1,'graf']]]
 ];

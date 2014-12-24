@@ -1,17 +1,21 @@
 # depslib dependency file v1.0
-1419340563 source:f:\moje dokumenty\aisdi\graf\graf.cpp
+1419448731 source:f:\moje dokumenty\aisdi\graf\graf.cpp
 	"graf.h"
 
-1419338845 f:\moje dokumenty\aisdi\graf\graf.h
+1419448926 f:\moje dokumenty\aisdi\graf\graf.h
 	<vector>
 	<utility>
+	<stack>
+	<iostream>
 
-1419348558 source:f:\moje dokumenty\aisdi\graf\main.cpp
+1419428359 source:f:\moje dokumenty\aisdi\graf\main.cpp
 	<iostream>
 	<cstdio>
 	<cstdlib>
+	<string>
+	<algorithm>
 	"graf.h"
 	"main_page_project_documentation.h"
 
-1419335174 f:\moje dokumenty\aisdi\graf\main_page_project_documentation.h
+1419440566 f:\moje dokumenty\aisdi\graf\main_page_project_documentation.h
 

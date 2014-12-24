@@ -105,7 +105,6 @@ $(document).ready(function(){initNavTree('classgraf.html','');});
   <div class="summary">
 <a href="#nested-classes">Komponenty</a> &#124;
 <a href="#pub-methods">Metody publiczne</a> &#124;
-<a href="#pri-methods">Metody prywatne</a> &#124;
 <a href="#pri-attribs">Atrybuty prywatne</a> &#124;
 <a href="classgraf-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
@@ -120,6 +119,9 @@ $(document).ready(function(){initNavTree('classgraf.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html">DFSdata</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">klasa zawierająca dane dla DFSa  <a href="classgraf_1_1_d_f_sdata.html#details">Więcej...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1krawedz.html">krawedz</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">klasa wewnętrzna reprezentująca krawędź grafu  <a href="classgraf_1_1krawedz.html#details">Więcej...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,11 +146,6 @@ Metody publiczne</h2></td></tr>
 <tr class="memitem:ac2a2ff452eb0a543ffc220936cd0a600"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf.html#ac2a2ff452eb0a543ffc220936cd0a600">znajdz_silnie_spojne_skladowe</a> ()</td></tr>
 <tr class="memdesc:ac2a2ff452eb0a543ffc220936cd0a600"><td class="mdescLeft">&#160;</td><td class="mdescRight">znajduje i wpisuje do wektora silnie spójne składowe  <a href="#ac2a2ff452eb0a543ffc220936cd0a600">Więcej...</a><br/></td></tr>
 <tr class="separator:ac2a2ff452eb0a543ffc220936cd0a600"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Metody prywatne</h2></td></tr>
-<tr class="memitem:ac31c9632dc5fd8cbfd47f27d607290fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf.html#ac31c9632dc5fd8cbfd47f27d607290fa">DFSscc</a> (unsigned int v)</td></tr>
-<tr class="separator:ac31c9632dc5fd8cbfd47f27d607290fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atrybuty prywatne</h2></td></tr>
@@ -199,30 +196,6 @@ Atrybuty prywatne</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja funkcji składowych</h2>
-<a class="anchor" id="ac31c9632dc5fd8cbfd47f27d607290fa"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void graf::DFSscc </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="af3cad188e3ec82ab34f5c35d83e07819"></a>
 <div class="memitem">
 <div class="memproto">
@@ -324,6 +297,15 @@ Atrybuty prywatne</h2></td></tr>
 <p>znajduje i wpisuje do wektora silnie spójne składowe </p>
 <dl class="section return"><dt>Zwraca</dt><dd>std::vector&lt;std::vector&lt;int&gt;&gt; wektor silnie spójnych składowych, każda to wektor numerów wierzchołków składowych </dd></dl>
 
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgraf_ac2a2ff452eb0a543ffc220936cd0a600_cgraph.png" border="0" usemap="#classgraf_ac2a2ff452eb0a543ffc220936cd0a600_cgraph" alt=""/></div>
+<map name="classgraf_ac2a2ff452eb0a543ffc220936cd0a600_cgraph" id="classgraf_ac2a2ff452eb0a543ffc220936cd0a600_cgraph">
+<area shape="rect" id="node2" href="classgraf_1_1_d_f_sdata.html#afba3541db4c77b39a8ec249d11540496" title="DFS przeszukujący. " alt="" coords="181,13,339,39"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
@@ -400,7 +382,7 @@ Atrybuty prywatne</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classgraf.html">graf</a></li>
-    <li class="footer">Wygenerowano Śr, 24 gru 2014 16:45:29 dla graf programem
+    <li class="footer">Wygenerowano Śr, 24 gru 2014 18:02:55 dla graf programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

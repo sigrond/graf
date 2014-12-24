@@ -11,7 +11,9 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Realizacja zadania", "_realizacja.html", [
-      [ "Algorytm", "_realizacja.html#Algorytm", null ],
+      [ "Algorytm", "_realizacja.html#Algorytm", [
+        [ "Kod", "_realizacja.html#Kod", null ]
+      ] ],
       [ "Obsługa wejścia", "_realizacja.html#Wejście", null ]
     ] ],
     [ "Klasy", null, [
