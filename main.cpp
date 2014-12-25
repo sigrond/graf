@@ -26,12 +26,12 @@ DEBUG cout << "silnie spojne skladowe testy" << endl;
     while(getline(cin,s))
     {
         count_space=count(s.begin(),s.end(),' ');
-        cout<<s<<endl;
+DEBUG   cout<<s<<endl;
         if(count_space==1)
         {
             x=stod(s,&poz);
             y=stod(s.substr(poz));
-            cout<<x<<", "<<y<<endl;
+DEBUG       cout<<x<<", "<<y<<endl;
             g.insert_wierzcholek(x,y);
         }
         else if(count_space==2)
@@ -39,7 +39,7 @@ DEBUG cout << "silnie spojne skladowe testy" << endl;
             a=stoi(s,&poz);//do pierwszej spacji
             b=stoi(s.substr(poz),&poz);//od pierwszej do drugiej spacji
             w=stod(s.substr(poz));//do końca
-            cout<<a<<", "<<b<<", "<<w<<endl;
+DEBUG       cout<<a<<", "<<b<<", "<<w<<endl;
             g.insert_krawedz(a,b,w);
         }
         else
@@ -52,9 +52,12 @@ DEBUG cout << "silnie spojne skladowe testy" << endl;
     {
 DEBUG   cout<<"skladowa: "<<i<<" rozmiar: "<<wynik[i].size()<<endl;
         if((wynik[i].size()+1)%2==0)
-        for(int j=0;j<wynik[i].size();j++)
         {
-            cout<<wynik[i][j]<<endl;
+            for(int j=0;j<wynik[i].size();j++)
+            {
+                cout<<wynik[i][j]<<" ";
+            }
+            cout<<endl;
         }
     }
 DEBUG system("pause");
