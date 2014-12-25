@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y',['y',['../classgraf_1_1wierzcholek.html#a441fa274f714fff15f066d53731a2f5e',1,'graf::wierzcholek']]]
+  ['x',['x',['../classgraf_1_1wierzcholek.html#a2eae96b8e2ccc44161d7ab347a21f88f',1,'graf::wierzcholek']]]
 ];

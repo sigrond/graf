@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['v',['V',['../classgraf.html#ae108d2788dbe00a1e7e78a9276a5ace5',1,'graf']]],
-  ['vlow',['VLow',['../classgraf_1_1_d_f_sdata.html#a618833ecc5006252509176e38035ce29',1,'graf::DFSdata']]],
-  ['vn',['VN',['../classgraf_1_1_d_f_sdata.html#aab8a07451dffd07c2e64edb7ce84ff4f',1,'graf::DFSdata']]],
-  ['vs',['VS',['../classgraf_1_1_d_f_sdata.html#a7196dabbdcbc8b3e0cfe1b36e0cb315b',1,'graf::DFSdata']]]
+  ['tab',['tab',['../classgraf.html#aa060a0259a047e7b09249a8384c0391c',1,'graf::tab()'],['../classgraf_1_1_d_f_sdata.html#a715b7735673ac15f6574e5f0d7925374',1,'graf::DFSdata::tab()']]]
 ];

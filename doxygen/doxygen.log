@@ -4,3 +4,5 @@ since release 1.8.2.  As a result some sentences may appear in English.
 F:/Moje dokumenty/AISDI/graf/main.cpp:20: warning: documented symbol `int main' was not declared or defined.
 F:/Moje dokumenty/AISDI/graf/main.cpp:21: warning: member with no name found.
 F:/Moje dokumenty/AISDI/graf/main.cpp:22: warning: member with no name found.
+F:/Moje dokumenty/AISDI/graf/graf.h:38: warning: The following parameters of graf::wierzcholek::wierzcholek(double X, double Y, unsigned int Numer) are not documented:
+  parameter 'Numer'

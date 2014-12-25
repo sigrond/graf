@@ -15,7 +15,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+DEBUG cout << "silnie spojne skladowe testy" << endl;
     graf g;
     double x,y;/**< \var x,y współrzędne wierzchołków */
     unsigned int a,b;/**< \var a,b numery wierchołków krawędzi */
@@ -50,12 +50,13 @@ int main()
     vector<vector<int> > wynik=g.znajdz_silnie_spojne_skladowe();
     for(int i=0;i<wynik.size();i++)
     {
-        cout<<"skladowa: "<<i<<" rozmiar: "<<wynik[i].size()<<endl;
+DEBUG   cout<<"skladowa: "<<i<<" rozmiar: "<<wynik[i].size()<<endl;
+        if((wynik[i].size()+1)%2==0)
         for(int j=0;j<wynik[i].size();j++)
         {
             cout<<wynik[i][j]<<endl;
         }
     }
-    system("pause");
+DEBUG system("pause");
     return 0;
 }

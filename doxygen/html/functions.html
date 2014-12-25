@@ -77,6 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
       <li class="current"><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Funkcje</span></a></li>
       <li><a href="functions_vars.html"><span>Zmienne</span></a></li>
+      <li><a href="functions_rela.html"><span>Funkcje&#160;powiązane</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -99,7 +100,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Strony</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,7 +115,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="classgraf_1_1_d_f_sdata.html#af041ad8a895000e8632818e6f5aed4bd">graf::DFSdata</a>
 </li>
 <li>DFSdata()
-: <a class="el" href="classgraf_1_1_d_f_sdata.html#a06d5d56398feb1772250496b3c02e8b3">graf::DFSdata</a>
+: <a class="el" href="classgraf_1_1_d_f_sdata.html#a21f59f8545e19248150fb78a9bb75035">graf::DFSdata</a>
 </li>
 <li>DFSscc()
 : <a class="el" href="classgraf_1_1_d_f_sdata.html#afba3541db4c77b39a8ec249d11540496">graf::DFSdata</a>
@@ -124,6 +125,8 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>graf()
 : <a class="el" href="classgraf.html#a6dc94b859678110f1bc85095a55bbee4">graf</a>
+, <a class="el" href="classgraf_1_1krawedz.html#a1726ca1919686bdccbca505bacf6de2f">graf::krawedz</a>
+, <a class="el" href="classgraf_1_1wierzcholek.html#a1726ca1919686bdccbca505bacf6de2f">graf::wierzcholek</a>
 </li>
 <li>insert_krawedz()
 : <a class="el" href="classgraf.html#af3cad188e3ec82ab34f5c35d83e07819">graf</a>
@@ -137,23 +140,24 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>krawedz()
 : <a class="el" href="classgraf_1_1krawedz.html#aa96f284cb6ab96b5d5a6e1d80bffb5f5">graf::krawedz</a>
 </li>
-<li>S
-: <a class="el" href="classgraf_1_1_d_f_sdata.html#a754b2b9cd729d845130f0d6b2bb72ddc">graf::DFSdata</a>
+<li>numer
+: <a class="el" href="classgraf_1_1wierzcholek.html#ab6ee4cec669109eb135ada67156c2117">graf::wierzcholek</a>
 </li>
-<li>skladowa
-: <a class="el" href="classgraf_1_1_d_f_sdata.html#a1a16d2bb56c18f064379a8bc13012fb4">graf::DFSdata</a>
+<li>S
+: <a class="el" href="classgraf_1_1_d_f_sdata.html#aeb7e1d9c8d6f0a0fed4bf8c7cd67f9fd">graf::DFSdata</a>
 </li>
 <li>tab
-: <a class="el" href="classgraf.html#aa060a0259a047e7b09249a8384c0391c">graf</a>
+: <a class="el" href="classgraf_1_1_d_f_sdata.html#a715b7735673ac15f6574e5f0d7925374">graf::DFSdata</a>
+, <a class="el" href="classgraf.html#aa060a0259a047e7b09249a8384c0391c">graf</a>
 </li>
 <li>V
 : <a class="el" href="classgraf.html#ae108d2788dbe00a1e7e78a9276a5ace5">graf</a>
 </li>
 <li>VLow
-: <a class="el" href="classgraf_1_1_d_f_sdata.html#a618833ecc5006252509176e38035ce29">graf::DFSdata</a>
+: <a class="el" href="classgraf_1_1_d_f_sdata.html#a8b733fb35910f618b5c3d02cd8f94ba6">graf::DFSdata</a>
 </li>
 <li>VN
-: <a class="el" href="classgraf_1_1_d_f_sdata.html#aab8a07451dffd07c2e64edb7ce84ff4f">graf::DFSdata</a>
+: <a class="el" href="classgraf_1_1_d_f_sdata.html#ab6673b5a992f821d7341f93746be5051">graf::DFSdata</a>
 </li>
 <li>VS
 : <a class="el" href="classgraf_1_1_d_f_sdata.html#a7196dabbdcbc8b3e0cfe1b36e0cb315b">graf::DFSdata</a>
@@ -162,7 +166,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="classgraf_1_1krawedz.html#a4cb6bad33c7446f8a37a38f66f343c5d">graf::krawedz</a>
 </li>
 <li>wierzcholek()
-: <a class="el" href="classgraf_1_1wierzcholek.html#a421de42b3b5e7f57e6072ec16d1af36f">graf::wierzcholek</a>
+: <a class="el" href="classgraf_1_1wierzcholek.html#a10a748daa039be10f563cab3b7ff20d4">graf::wierzcholek</a>
 </li>
 <li>wynik
 : <a class="el" href="classgraf_1_1_d_f_sdata.html#ac18e9464c985b92112bb3e533cd78dd8">graf::DFSdata</a>
@@ -191,7 +195,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Wygenerowano Śr, 24 gru 2014 18:02:55 dla graf programem
+    <li class="footer">Wygenerowano Cz, 25 gru 2014 20:49:31 dla graf programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('classgraf_1_1wierzcholek.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Strony</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('classgraf_1_1wierzcholek.html','');});
   <div class="summary">
 <a href="#pub-methods">Metody publiczne</a> &#124;
 <a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="#friends">Przyjaciele</a> &#124;
 <a href="classgraf_1_1wierzcholek-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
 <div class="title">Dokumentacja klasy graf::wierzcholek</div>  </div>
@@ -116,9 +117,9 @@ $(document).ready(function(){initNavTree('classgraf_1_1wierzcholek.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
-<tr class="memitem:a421de42b3b5e7f57e6072ec16d1af36f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1wierzcholek.html#a421de42b3b5e7f57e6072ec16d1af36f">wierzcholek</a> (double X, double Y)</td></tr>
-<tr class="memdesc:a421de42b3b5e7f57e6072ec16d1af36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">konstruktor wierzchołka  <a href="#a421de42b3b5e7f57e6072ec16d1af36f">Więcej...</a><br/></td></tr>
-<tr class="separator:a421de42b3b5e7f57e6072ec16d1af36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a748daa039be10f563cab3b7ff20d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1wierzcholek.html#a10a748daa039be10f563cab3b7ff20d4">wierzcholek</a> (double X, double Y, unsigned int Numer)</td></tr>
+<tr class="memdesc:a10a748daa039be10f563cab3b7ff20d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">konstruktor wierzchołka  <a href="#a10a748daa039be10f563cab3b7ff20d4">Więcej...</a><br/></td></tr>
+<tr class="separator:a10a748daa039be10f563cab3b7ff20d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45e6f5777f010d9b481604f7b366ec6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1wierzcholek.html#a45e6f5777f010d9b481604f7b366ec6c">~wierzcholek</a> ()</td></tr>
 <tr class="memdesc:a45e6f5777f010d9b481604f7b366ec6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">destruktor wierzchołka  <a href="#a45e6f5777f010d9b481604f7b366ec6c">Więcej...</a><br/></td></tr>
 <tr class="separator:a45e6f5777f010d9b481604f7b366ec6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,11 +130,18 @@ Atrybuty prywatne</h2></td></tr>
 <tr class="separator:a2eae96b8e2ccc44161d7ab347a21f88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a441fa274f714fff15f066d53731a2f5e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1wierzcholek.html#a441fa274f714fff15f066d53731a2f5e">y</a></td></tr>
 <tr class="separator:a441fa274f714fff15f066d53731a2f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ee4cec669109eb135ada67156c2117"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1wierzcholek.html#ab6ee4cec669109eb135ada67156c2117">numer</a></td></tr>
+<tr class="separator:ab6ee4cec669109eb135ada67156c2117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Przyjaciele</h2></td></tr>
+<tr class="memitem:a1726ca1919686bdccbca505bacf6de2f"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1wierzcholek.html#a1726ca1919686bdccbca505bacf6de2f">graf</a></td></tr>
+<tr class="separator:a1726ca1919686bdccbca505bacf6de2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><p>klasa wewnętrzna reprezentująca wierzchołek grafu </p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
-<a class="anchor" id="a421de42b3b5e7f57e6072ec16d1af36f"></a>
+<a class="anchor" id="a10a748daa039be10f563cab3b7ff20d4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -150,7 +158,13 @@ Atrybuty prywatne</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>Y</em>&#160;</td>
+          <td class="paramname"><em>Y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>Numer</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -201,7 +215,48 @@ Atrybuty prywatne</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Dokumentacja przyjaciół i funkcji związanych</h2>
+<a class="anchor" id="a1726ca1919686bdccbca505bacf6de2f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classgraf.html">graf</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="ab6ee4cec669109eb135ada67156c2117"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int graf::wierzcholek::numer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a2eae96b8e2ccc44161d7ab347a21f88f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -253,7 +308,7 @@ Atrybuty prywatne</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classgraf.html">graf</a></li><li class="navelem"><a class="el" href="classgraf_1_1wierzcholek.html">wierzcholek</a></li>
-    <li class="footer">Wygenerowano Śr, 24 gru 2014 18:02:55 dla graf programem
+    <li class="footer">Wygenerowano Cz, 25 gru 2014 20:49:31 dla graf programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

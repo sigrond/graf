@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('classgraf_1_1_d_f_sdata.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Strony</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,34 +116,36 @@ $(document).ready(function(){initNavTree('classgraf_1_1_d_f_sdata.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
-<tr class="memitem:a06d5d56398feb1772250496b3c02e8b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html#a06d5d56398feb1772250496b3c02e8b3">DFSdata</a> (unsigned int n)</td></tr>
-<tr class="memdesc:a06d5d56398feb1772250496b3c02e8b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">konstruktor inicjalizujący dane dla DFSa  <a href="#a06d5d56398feb1772250496b3c02e8b3">Więcej...</a><br/></td></tr>
-<tr class="separator:a06d5d56398feb1772250496b3c02e8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f59f8545e19248150fb78a9bb75035"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html#a21f59f8545e19248150fb78a9bb75035">DFSdata</a> (unsigned int n, std::vector&lt; std::pair&lt; <a class="el" href="classgraf_1_1wierzcholek.html">wierzcholek</a> *, std::vector&lt; <a class="el" href="classgraf_1_1krawedz.html">krawedz</a> * &gt; * &gt; &gt; &amp;Tab)</td></tr>
+<tr class="memdesc:a21f59f8545e19248150fb78a9bb75035"><td class="mdescLeft">&#160;</td><td class="mdescRight">konstruktor inicjalizujący dane dla DFSa  <a href="#a21f59f8545e19248150fb78a9bb75035">Więcej...</a><br/></td></tr>
+<tr class="separator:a21f59f8545e19248150fb78a9bb75035"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afba3541db4c77b39a8ec249d11540496"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html#afba3541db4c77b39a8ec249d11540496">DFSscc</a> (unsigned int v)</td></tr>
 <tr class="memdesc:afba3541db4c77b39a8ec249d11540496"><td class="mdescLeft">&#160;</td><td class="mdescRight">DFS przeszukujący.  <a href="#afba3541db4c77b39a8ec249d11540496">Więcej...</a><br/></td></tr>
 <tr class="separator:afba3541db4c77b39a8ec249d11540496"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Atrybuty publiczne</h2></td></tr>
+<tr class="memitem:a715b7735673ac15f6574e5f0d7925374"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair<br class="typebreak"/>
+&lt; <a class="el" href="classgraf_1_1wierzcholek.html">wierzcholek</a> *, std::vector<br class="typebreak"/>
+&lt; <a class="el" href="classgraf_1_1krawedz.html">krawedz</a> * &gt; * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html#a715b7735673ac15f6574e5f0d7925374">tab</a></td></tr>
+<tr class="separator:a715b7735673ac15f6574e5f0d7925374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac18e9464c985b92112bb3e533cd78dd8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html#ac18e9464c985b92112bb3e533cd78dd8">wynik</a></td></tr>
 <tr class="separator:ac18e9464c985b92112bb3e533cd78dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a16d2bb56c18f064379a8bc13012fb4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html#a1a16d2bb56c18f064379a8bc13012fb4">skladowa</a></td></tr>
-<tr class="separator:a1a16d2bb56c18f064379a8bc13012fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af041ad8a895000e8632818e6f5aed4bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html#af041ad8a895000e8632818e6f5aed4bd">cvn</a></td></tr>
 <tr class="separator:af041ad8a895000e8632818e6f5aed4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a754b2b9cd729d845130f0d6b2bb72ddc"><td class="memItemLeft" align="right" valign="top">std::stack&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html#a754b2b9cd729d845130f0d6b2bb72ddc">S</a></td></tr>
-<tr class="separator:a754b2b9cd729d845130f0d6b2bb72ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab8a07451dffd07c2e64edb7ce84ff4f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html#aab8a07451dffd07c2e64edb7ce84ff4f">VN</a></td></tr>
-<tr class="separator:aab8a07451dffd07c2e64edb7ce84ff4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7e1d9c8d6f0a0fed4bf8c7cd67f9fd"><td class="memItemLeft" align="right" valign="top">std::stack&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html#aeb7e1d9c8d6f0a0fed4bf8c7cd67f9fd">S</a></td></tr>
+<tr class="separator:aeb7e1d9c8d6f0a0fed4bf8c7cd67f9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6673b5a992f821d7341f93746be5051"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html#ab6673b5a992f821d7341f93746be5051">VN</a></td></tr>
+<tr class="separator:ab6673b5a992f821d7341f93746be5051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7196dabbdcbc8b3e0cfe1b36e0cb315b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html#a7196dabbdcbc8b3e0cfe1b36e0cb315b">VS</a></td></tr>
 <tr class="separator:a7196dabbdcbc8b3e0cfe1b36e0cb315b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a618833ecc5006252509176e38035ce29"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html#a618833ecc5006252509176e38035ce29">VLow</a></td></tr>
-<tr class="separator:a618833ecc5006252509176e38035ce29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b733fb35910f618b5c3d02cd8f94ba6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraf_1_1_d_f_sdata.html#a8b733fb35910f618b5c3d02cd8f94ba6">VLow</a></td></tr>
+<tr class="separator:a8b733fb35910f618b5c3d02cd8f94ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><p>klasa zawierająca dane dla DFSa </p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
-<a class="anchor" id="a06d5d56398feb1772250496b3c02e8b3"></a>
+<a class="anchor" id="a21f59f8545e19248150fb78a9bb75035"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -151,8 +153,18 @@ Atrybuty publiczne</h2></td></tr>
           <td class="memname">graf::DFSdata::DFSdata </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; <a class="el" href="classgraf_1_1wierzcholek.html">wierzcholek</a> *, std::vector&lt; <a class="el" href="classgraf_1_1krawedz.html">krawedz</a> * &gt; * &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>Tab</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -161,6 +173,7 @@ Atrybuty publiczne</h2></td></tr>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>ilość wierzchołków </td></tr>
+    <tr><td class="paramname">Tab</td><td>referencja do listy połączeń w grafie </td></tr>
   </table>
   </dd>
 </dl>
@@ -205,48 +218,48 @@ Atrybuty publiczne</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a754b2b9cd729d845130f0d6b2bb72ddc"></a>
+<a class="anchor" id="aeb7e1d9c8d6f0a0fed4bf8c7cd67f9fd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::stack&lt;int&gt; graf::DFSdata::S</td>
+          <td class="memname">std::stack&lt;unsigned int&gt; graf::DFSdata::S</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a1a16d2bb56c18f064379a8bc13012fb4"></a>
+<a class="anchor" id="a715b7735673ac15f6574e5f0d7925374"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int&gt; graf::DFSdata::skladowa</td>
+          <td class="memname">std::vector&lt;std::pair&lt;<a class="el" href="classgraf_1_1wierzcholek.html">wierzcholek</a>*, std::vector&lt;<a class="el" href="classgraf_1_1krawedz.html">krawedz</a>*&gt;* &gt; &gt; graf::DFSdata::tab</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a618833ecc5006252509176e38035ce29"></a>
+<a class="anchor" id="a8b733fb35910f618b5c3d02cd8f94ba6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int&gt; graf::DFSdata::VLow</td>
+          <td class="memname">std::vector&lt;unsigned int&gt; graf::DFSdata::VLow</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aab8a07451dffd07c2e64edb7ce84ff4f"></a>
+<a class="anchor" id="ab6673b5a992f821d7341f93746be5051"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int&gt; graf::DFSdata::VN</td>
+          <td class="memname">std::vector&lt;unsigned int&gt; graf::DFSdata::VN</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -287,7 +300,7 @@ Atrybuty publiczne</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classgraf.html">graf</a></li><li class="navelem"><a class="el" href="classgraf_1_1_d_f_sdata.html">DFSdata</a></li>
-    <li class="footer">Wygenerowano Śr, 24 gru 2014 18:02:55 dla graf programem
+    <li class="footer">Wygenerowano Cz, 25 gru 2014 20:49:31 dla graf programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['waga',['waga',['../classgraf_1_1krawedz.html#a4cb6bad33c7446f8a37a38f66f343c5d',1,'graf::krawedz']]],
-  ['wierzcholek',['wierzcholek',['../classgraf_1_1wierzcholek.html',1,'graf']]],
-  ['wierzcholek',['wierzcholek',['../classgraf_1_1wierzcholek.html#a421de42b3b5e7f57e6072ec16d1af36f',1,'graf::wierzcholek']]],
-  ['wynik',['wynik',['../classgraf_1_1_d_f_sdata.html#ac18e9464c985b92112bb3e533cd78dd8',1,'graf::DFSdata']]]
+  ['v',['V',['../classgraf.html#ae108d2788dbe00a1e7e78a9276a5ace5',1,'graf']]],
+  ['vlow',['VLow',['../classgraf_1_1_d_f_sdata.html#a8b733fb35910f618b5c3d02cd8f94ba6',1,'graf::DFSdata']]],
+  ['vn',['VN',['../classgraf_1_1_d_f_sdata.html#ab6673b5a992f821d7341f93746be5051',1,'graf::DFSdata']]],
+  ['vs',['VS',['../classgraf_1_1_d_f_sdata.html#a7196dabbdcbc8b3e0cfe1b36e0cb315b',1,'graf::DFSdata']]]
 ];

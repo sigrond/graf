@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tab',['tab',['../classgraf.html#aa060a0259a047e7b09249a8384c0391c',1,'graf']]]
+  ['s',['S',['../classgraf_1_1_d_f_sdata.html#aeb7e1d9c8d6f0a0fed4bf8c7cd67f9fd',1,'graf::DFSdata']]]
 ];
